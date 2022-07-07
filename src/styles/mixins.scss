@@ -1,0 +1,56 @@
+// FLEX
+@mixin flex-mix($colOrRow, $position) {
+  display: flex;
+  flex-flow: warp $colOrRow;
+  justify-content: $position;
+}
+
+// FLEX
+@mixin flex($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+// FONT FAMILY
+@mixin font-family($font, $size, $color, $font-weight, $line-height) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+@mixin font-family-line($font, $size, $color, $font-weight) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+  font-weight: $font-weight;
+}
+@mixin respond($breakpoint) {
+  @if $breakpoint==l {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint==sm {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xs {
+    @media only screen and (max-width: 460px) {
+      @content;
+    }
+  }
+  @if $breakpoint==xxs {
+    @media only screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  @if $breakpoint==xxxs {
+    @media only screen and (max-width: 350px) {
+      @content;
+    }
+  }
+}

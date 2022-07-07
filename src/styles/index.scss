@@ -1,0 +1,42 @@
+@import "./mixins.scss";
+@import "./variable.scss";
+@font-face {
+  font-family: 'Roboto';
+  src: local('fonts'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local('fonts'), url(./fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('fonts'), url(./fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+.ant-form-item-label label {
+  font-family: 'Roboto-Medium';
+}
+.modal-title {
+  font-family: 'Roboto-Bold';
+}
+.ant-radio-button-wrapper:focus-within {
+  box-shadow: 0 0 0 2px #171717 !important;
+}
+.ant-btn:focus,
+.ant-tabs-tab-btn:focus,
+.ant-checkbox:focus-within,
+.ant-radio-inner:focus-within,
+.ant-collapse-header:focus,
+.ant-pagination-item:focus,
+a:focus {
+  border: 2px solid #171717 !important;
+}
+
+.main-layout{
+  margin: 0;
+  padding: 0;
+  background-color:var(--color-white-2);
+  .main-title{
+    padding: 1rem 1rem;
+  }
+}

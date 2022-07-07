@@ -5,7 +5,7 @@ import { LoadingPosts } from './LoadingPosts';
 import useLazyLoad from '../hooks/useLazyLoad';
 import { Gallery } from './Gallery'
 import { NUM_PER_PAGE, IMAGES_URL } from '../config';
-import { IImage,GridImage } from './Gallery';
+import { GridImage } from './Gallery';
 
 export const GalleryPage:React.FC = () => {
     const triggerRef = useRef(null);
